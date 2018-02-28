@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Configurations>Debug;Release;Test</Configurations>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition=" '$(Configuration)'=='Test' ">
+      <ItemGroup>
+        <PackageReference Include="NSubstitute" Version="3.1.0" />
+        <PackageReference Include="FluentAssertions" Version="5.0.0" />
+        <PackageReference Include="xunit" Version="2.3.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+        <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+      </ItemGroup>
+
+      <ItemGroup>
+        <!--nesting-->
+        <Compile Update="SomeService.*.cs">
+          <DependentUpon>SomeService.cs</DependentUpon>
+        </Compile>
+      </ItemGroup>
+    </When>
+    <When Condition=" '$(Configuration)'!='Test' ">
+      <ItemGroup>
+        <Compile Remove="**/*.Spec.cs" />
+      </ItemGroup>
+    </When>
+  </Choose>
+
+</Project>

@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{8C610D62-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{59D5B710-FB9F-460A-ADE2-C6677E0D81C3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{9DC2ECF0-76DB-4078-BBD3-6292D9F84272}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{59D5B710-FB9F-460A-ADE2-C6677E0D81C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{59D5B710-FB9F-460A-ADE2-C6677E0D81C3}.Test|Any CPU.ActiveCfg = Test|Any CPU
 		{59D5B710-FB9F-460A-ADE2-C6677E0D81C3}.Test|Any CPU.Build.0 = Test|Any CPU
+		{9DC2ECF0-76DB-4078-BBD3-6292D9F84272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC2ECF0-76DB-4078-BBD3-6292D9F84272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC2ECF0-76DB-4078-BBD3-6292D9F84272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC2ECF0-76DB-4078-BBD3-6292D9F84272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC2ECF0-76DB-4078-BBD3-6292D9F84272}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{9DC2ECF0-76DB-4078-BBD3-6292D9F84272}.Test|Any CPU.Build.0 = Test|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
